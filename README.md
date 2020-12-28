@@ -5,13 +5,12 @@ This program will search for s set of keywords in a large text
 
 #### Prerequisites
 - Java
-- Maven
 
 #### Building
 - After cloning the repo, build the executable uber JAR and copy it up to the root dir.
 
 ```
-$ mvn clean package shade:shade
+$ ./mvnw clean package shade:shade
 $ cp target/StringMatcher-1.0-SNAPSHOT.jar .
 
 ```
