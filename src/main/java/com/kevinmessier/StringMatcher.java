@@ -38,13 +38,13 @@ public class StringMatcher {
 	@Option(name = "-k", aliases = "--keywords-file", usage = "Path to a CSV file containing the keywords to be matched", required = true)
 	private String keywordsFilePath;
 
-	@Option(name = "-l", aliases = "--lines-per-chunk", usage = "Optional - Number of lines per chunk")
+	@Option(name = "-l", aliases = "--lines-per-chunk", usage = "Optional - Number of lines processed per thread")
 	private int chunkSize = 1000;
 
 	@Option(name = "-c", aliases = "--case-sensitive", usage = "Optional - Perform case sensitive search")
 	private boolean caseSensitveSearch = false;
 
-	@Option(name = "-p", aliases = "--partial-matches", usage = "Optional - Match or partial words (default is whole words)")
+	@Option(name = "-p", aliases = "--partial-matches", usage = "Optional - Match partial words (default is whole words)")
 	private boolean matchPartialWords = false;
 
 	private String[] keywords;

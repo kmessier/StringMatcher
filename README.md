@@ -1,7 +1,7 @@
 # StringMatcher
 
 #### About
-This program will search for s set of keywords in a large text
+This program will use multiple threads to search for a set of keywords in a text file
 
 #### Prerequisites
 - Java
@@ -28,8 +28,8 @@ java -jar StringMatcher-1.0-SNAPSHOT.jar -k names.csv -i big.txt
 -c (--case-sensitive)    : Optional - Perform case sensitive search (default: false)
 -i (--input-file) VAL    : Path to the input file containing the text to be searched
 -k (--keywords-file) VAL : Path to a CSV file containing the keywords to be matched
--l (--lines-per-chunk) N : Optional - Number of lines per chunk (default: 1000)
--p (--partial-matches)   : Optional - Match or partial words (default: false - whole words only)
+-l (--lines-per-chunk) N : Optional - Number of lines processed per thread (default: 1000)
+-p (--partial-matches)   : Optional - Match partial words (default: false - whole words only)
 ```
 
 - Optional - build_and_execute.sh will run the above build, copy, and exection steps in a single command
