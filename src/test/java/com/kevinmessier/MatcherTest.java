@@ -23,7 +23,7 @@ public class MatcherTest {
 		List<String> lines = new ArrayList<String>();
 		lines.add("one two three four five six seven eight nine ten");
 		lines.add("The quick brown fox jumps over the lazy dog");
-		lines.add("one three five seven nine");
+		lines.add("one three five seven nine fourteen");
 		
 		// Expected Match values
 		String[] expectedValues = new String[5];
